@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap XL Columns Demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-xl-columns.min.css" rel="stylesheet" />
+    <style type="text/css">
+        #main-container { border: 2px dashed red; }
+        .column-sizing > div { border: 1px dashed red; }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="main-container">
+
+        <div class="page-header">
+            <h1>
+                Boostrap XL Columns Demo
+                <small>
+                    Current mode:
+                    <div class="visible-xl-inline"><strong>XL</strong> (Extra large)</div>
+                    <div class="visible-lg-inline"><strong>LG</strong> (Large)</div>
+                    <div class="visible-md-inline"><strong>MD</strong> (Medium)</div>
+                    <div class="visible-sm-inline"><strong>SM</strong> (Small)</div>
+                    <div class="visible-xs-inline"><strong>XS</strong> (Extra small)</div>
+                </small>
+            </h1>
+        </div>
+
+        <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#rows-cols-sizing" role="tab" data-toggle="tab">Rows / Column Sizing</a>
+                </li>
+                <li role="presentation">
+                    <a href="#tables" role="tab" data-toggle="tab">Tables</a>
+                </li>
+                <li role="presentation">
+                    <a href="#hidden" role="tab" data-toggle="tab">Hidden Classes</a>
+                </li>
+                <li role="presentation">
+                    <a href="#visible" role="tab" data-toggle="tab">Visible Classes</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="rows-cols-sizing">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+
+                            <h2 class="h3">Rows / Column Sizing</h2>
+
+                            <div class="row column-sizing">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">
+                                    col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">
+                                    col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">
+                                    col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">
+                                    col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">
+                                    col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">
+                                    col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">
+                                    col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">
+                                    col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">
+                                    col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">
+                                    col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">
+                                    col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">
+                                    col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tables">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+
+                            <h2 class="h3">Tables</h2>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="hidden">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+
+                            <h2 class="h3">Hidden Classes</h2>
+
+                            <h3 class="h4">hidden-*</h3>
+
+                            <div class="alert alert-info hidden-xs"><strong>.hidden-xs</strong></div>
+                            <div class="alert alert-info hidden-sm"><strong>.hidden-sm</strong></div>
+                            <div class="alert alert-info hidden-md"><strong>.hidden-md</strong></div>
+                            <div class="alert alert-info hidden-lg"><strong>.hidden-lg</strong></div>
+                            <div class="alert alert-info hidden-xl"><strong>.hidden-xl</strong></div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="visible">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+
+                            <h2 class="h3">Visible Classes</h2>
+
+                            <h3 class="h4">visible-*</h3>
+
+                            <div class="alert alert-info visible-xs"><strong>.visible-xs</strong></div>
+                            <div class="alert alert-info visible-sm"><strong>.visible-sm</strong></div>
+                            <div class="alert alert-info visible-md"><strong>.visible-md</strong></div>
+                            <div class="alert alert-info visible-lg"><strong>.visible-lg</strong></div>
+                            <div class="alert alert-info visible-xl"><strong>.visible-xl</strong></div>
+
+                            <h3 class="h4">visible-*-block</h3>
+
+                            <div class="alert alert-info visible-xs-block"><strong>.visible-xs-block</strong></div>
+                            <div class="alert alert-info visible-sm-block"><strong>.visible-sm-block</strong></div>
+                            <div class="alert alert-info visible-md-block"><strong>.visible-md-block</strong></div>
+                            <div class="alert alert-info visible-lg-block"><strong>.visible-lg-block</strong></div>
+                            <div class="alert alert-info visible-xl-block"><strong>.visible-xl-block</strong></div>
+
+                            <h3 class="h4">visible-*-inline</h3>
+
+                            <div class="clearfix">
+                                <div class="alert alert-info visible-xs-inline"><strong>.visible-xs-inline</strong></div>
+                                <div class="alert alert-info visible-sm-inline"><strong>.visible-sm-inline</strong></div>
+                                <div class="alert alert-info visible-md-inline"><strong>.visible-md-inline</strong></div>
+                                <div class="alert alert-info visible-lg-inline"><strong>.visible-lg-inline</strong></div>
+                                <div class="alert alert-info visible-xl-inline"><strong>.visible-xl-inline</strong></div>
+                            </div>
+
+                            <h3 class="h4">visible-*-inline-block</h3>
+
+                            <div class="clearfix">
+                                <div class="alert alert-info visible-xs-inline-block"><strong>.visible-xs-inline-block</strong></div>
+                                <div class="alert alert-info visible-sm-inline-block"><strong>.visible-sm-inline-block</strong></div>
+                                <div class="alert alert-info visible-md-inline-block"><strong>.visible-md-inline-block</strong></div>
+                                <div class="alert alert-info visible-lg-inline-block"><strong>.visible-lg-inline-block</strong></div>
+                                <div class="alert alert-info visible-xl-inline-block"><strong>.visible-xl-inline-block</strong></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
