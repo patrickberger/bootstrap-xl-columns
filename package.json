@@ -8,6 +8,11 @@
     "email": "pb@patrickberger.org",
     "url": "https://github.com/patrickberger"
   },
+  "homepage": "https://github.com/patrickberger/bootstrap-xl-columns",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickberger/bootstrap-xl-columns.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "grunt": "^1.0.1",
