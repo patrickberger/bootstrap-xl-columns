@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap-xl-columns",
+  "title": "Bootstrap XL Columns",
+  "version": "1.0.0",
+  "description": "Extending bootstrap's grid system.",
+  "author": {
+    "name": "Patrick Berger",
+    "email": "pb@patrickberger.org",
+    "url": "https://github.com/patrickberger"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^1.4.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1"
+  }
+}

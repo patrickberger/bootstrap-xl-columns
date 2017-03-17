@@ -1,0 +1,137 @@
+@import "../../vendor/bootstrap/less/variables.less";
+@import "../../vendor/bootstrap/less/mixins.less";
+@import "mixins.less";
+
+// @see https://spin.atomicobject.com/2015/03/06/bootstrap-add-xl-grid-size-option/
+// @see http://pastebin.com/mDP3Nfde
+
+// Xtra large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-xl:             1400px;
+@screen-xl-min:         @screen-xl;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-xl-desktop:     @screen-xl-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-lg-max:         (@screen-xl-min - 1);
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+// Xtra large screen / wide desktop
+@container-xlarge-desktop:  (1340px + @grid-gutter-width);
+//** For `@screen-xl-min` and up.
+@container-xl:              @container-xlarge-desktop;
+
+// grid.less
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+    .container-fixed();
+    @media (min-width: @screen-xl-min) {
+        width: @container-xl;
+    }
+}
+
+.make-xl-grid-columns();
+
+// Columns, offsets, pushes, and pulls for the xlarge desktop device range.
+
+@media (min-width: @screen-xl-min) {
+    .make-grid(xl);
+}
+
+// responsive-utilities.less
+
+// XL columns.
+.visible-xl {
+  .responsive-invisibility();
+}
+
+.visible-xl-block,
+.visible-xl-inline,
+.visible-xl-inline-block {
+  display: none !important;
+}
+
+.visible-xl {
+  @media (min-width: @screen-xl-min) {
+    .responsive-visibility();
+  }
+}
+.visible-xl-block {
+  @media (min-width: @screen-xl-min) {
+    display: block !important;
+  }
+}
+.visible-xl-inline {
+  @media (min-width: @screen-xl-min) {
+    display: inline !important;
+  }
+}
+.visible-xl-inline-block {
+  @media (min-width: @screen-xl-min) {
+    display: inline-block !important;
+  }
+}
+
+.hidden-xl {
+  @media (min-width: @screen-xl-min) {
+    .responsive-invisibility();
+  }
+}
+
+// Fix lg columns.
+// Adjust LG columns to have an upper limit.
+.visible-lg {
+  .responsive-invisibility();
+}
+
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+    display: none !important;
+}
+
+.visible-lg {
+  @media (min-width: @screen-lg-min) and (max-width: @screen-lg-max){
+    .responsive-visibility();
+  }
+}
+.visible-lg-block {
+  @media (min-width: @screen-lg-min) and (max-width: @screen-lg-max){
+    display: block !important;
+  }
+}
+.visible-lg-inline {
+  @media (min-width: @screen-lg-min) and (max-width: @screen-lg-max){
+    display: inline !important;
+  }
+}
+.visible-lg-inline-block {
+  @media (min-width: @screen-lg-min) and (max-width: @screen-lg-max){
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: @screen-xl-min) {
+    .visible-lg {
+        display: none !important;
+    }
+    .hidden-lg {
+        display: block !important;
+    }
+    table.hidden-lg {
+        display: table;
+    }
+    tr.hidden-lg {
+        display: table-row !important;
+    }
+    th.hidden-lg,
+    td.hidden-lg {
+        display: table-cell !important;
+    }
+}
